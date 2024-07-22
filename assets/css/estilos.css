@@ -1,0 +1,69 @@
+*{              /*selector universal(SELECCIONA TODOS LOS ELEMENTOS)*/
+	margin: 0; /*todos los elementos tienen margen 0*/
+	padding: 0;/*espacio de relleno 0*/
+	font-family: TIME NEW ROMAN; /*tipo de fuente para todo el sitio*/
+}
+body{ /*selector de etiqueta*/
+	background: #d8bfd8;/*fondo*/
+}
+header, section, footer{
+	width: 98%; /*ancho en % para que se adapte a la pantalla*/
+	max-width: 1300px;/*para indicar que el tamaño máximo sea 1300px*/
+	margin: 2px auto; /*se aplica margen superior e inferior, separa header, section y footer */
+} 
+/*Formato Área de navegación*/
+header nav{
+	background-image:url(imagenes/1.jpg); /*Imagen para el menú*/
+	overflow: hidden;/*oculta el contenido excedente*/
+	width: 1300px; height: 150px;
+}
+header nav ul li{
+	float: left;/*crea el menú horizontal*/
+	margin: 1em; /*márgenes para los elementos de la lista*/
+	list-style-type: none;
+}
+header nav ul li a{
+	padding: 4px -1px;/*padding y display trabajan juntos (espacio de relleno)*/
+	display: block;
+	color: #4b0082;/*color de la fuente*/
+	font-size: 20px;/*tamaño de la fuente*/
+	font-weight: bold;
+	text-decoration: none; /*elimina el subrayado del enlace*/
+
+}
+header nav ul li a:hover{
+	color: #0000FF; /*al pasar el mouse sobre el enlace cambia el color de la fuente*/
+}
+
+.logotipo{/*selector de clase (creamos un nombre)*/
+	margin: 10px;
+	float: left;/*se une el logo con el nav*/
+}
+footer{
+	width: 100%;
+	background:#c71585;
+	color: #fff;/*color fuente*/
+	padding: 5px;/*espacio del contenido*/
+	text-align: center;/*alineación del texto*/
+}
+/*formato para el título de nivel 2*/
+h2{
+	color: #8b008b;
+	font-size: 40px;
+	text-align: center;
+	font-family: Dancing Script;
+	
+}
+/*formato para el párrafo dentro del section*/
+section p{
+	color: #124653;
+	font-size: 20px;/*tamaño de lafuente*/
+	margin: 10px;/*espacio de margen*/
+	text-align: justify;
+}
+/*formato para video*/
+video{
+	position: relative;/*centra el elemento video junto con left y top*/
+	left: 200px;
+	top:-1px;
+}

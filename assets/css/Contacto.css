@@ -1,0 +1,71 @@
+*{              /*selector universal*/
+	margin: 0; /*todos los elementos tienen margen 0*/
+	padding: 0;/*espacio de relleno 0*/
+	font-family: Comic Sans MS; /*tipon de fuente para todo el sitio*/
+}
+body{
+	background: #d8bfd8;/*color de fondo verde claro*/
+}
+header, section,footer   {
+	width: 90%; /*ancho en % para que se adapte a la pantalla*/
+	max-width: 1300px;/*para indicar que el tamaño máximo sea 1300px*/
+	margin: 1px auto; /*se aplica margen superior e inferior, separa header, section y footer*/
+} 
+/*Formato Área de navegación*/
+header nav{
+	background: #c71585; /*color para el menú*/
+	overflow: hidden;/*oculta el contenido excedente*/
+	
+}
+header nav ul li{
+	float: left;/*crea el menú horizontal*/
+	margin: 1em; /*márgenes para los elementos de la lista*/
+	list-style-type: none;
+}
+header nav ul li a{
+	padding: 10px 10px;/*padding y display trabajan juntos*/
+	display: block;
+	color: #a2d9ce;/*color de la fuente*/
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none; /*elimina el subrayado del enlace*/
+
+}
+header nav ul li a:hover{
+	color: #ee82ee; /*al pasar el mouse sobre el enlace cambia el color de la fuente*/
+
+}
+/*formato para el título de nivel 2*/
+.principal {
+	color:#8b008b;
+	font-size: 15px;
+	text-align: left;
+	font-family: Dancing Script;
+}
+h3{
+	color: #124653;
+	font-size: 20px;
+	text-align: left;
+}
+/*formato para el párrafo dentro del section*/
+section p{
+	color: #124653;
+	font-size: 20px;
+	margin-left: 1.5em/*margenes para los elementos de selection*/
+}
+/*formato para el contenido embebido dentro de section*/
+iframe{
+	position: relative;/*centra la imagen junto con left y top*/
+	left: 200px;
+}
+#mapa{
+	background-color: #fff;
+	opacity: 0.8;
+}
+footer{
+	width: 100%;
+	background:#c71585;
+	color: #fff;/*color fuente*/
+	padding: 5px;/*espacio del contenido*/
+	text-align: center;/*alineación del texto*/
+}

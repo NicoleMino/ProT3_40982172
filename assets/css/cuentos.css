@@ -1,0 +1,52 @@
+*{              /*selector universal*/
+	margin: 0; /*todos los elementos tienen margen 0*/
+	padding: 0;/*espacio de relleno 0*/
+	font-family: Comic Sans MS; /*tipon de fuente para todo el sitio*/
+}
+body{
+	background: #d8bfd8;/*color de fondo verde claro*/
+}
+header, section, footer {
+	width: 90%; /*ancho en % para que se adapte a la pantalla*/
+	max-width: 1300px;/*para indicar que el tamaño máximo sea 1300px*/
+	margin: 1px auto; /*se aplica margen superior e inferior, separa header, section y footer*/
+} 
+/*Formato Área de navegación*/
+header nav{
+	background: #c71585; /*color para el menú*/
+	overflow: hidden;/*oculta el contenido excedente*/
+}
+header nav ul li{
+	float: left;/*crea el menú horizontal*/
+	margin: 1em; /*márgenes para los elementos de la lista*/
+	list-style-type: none;
+}
+header nav ul li a{
+	padding: 10px 10px;/*padding y display trabajan juntos*/
+	display: block;
+	color: #A2D9CE;/*color de la fuente*/
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none; /*elimina el subrayado del enlace*/
+
+}
+header nav ul li a:hover{
+	color: #397d54; /*al pasar el mouse sobre el enlace cambia el color de la fuente*/
+}
+/*formato para el título de nivel 2*/
+h2{
+	color: #397d54;
+	font-size: 40px;
+	text-align: center;
+}
+/*formato para el párrafo dentro del section*/
+section p{
+	color: #124653;
+	font-size: 20px;
+}
+/*formato para video*/
+video{
+	position: relative;/*centra el elemento video juntocon left y top*/
+	left: 100px;
+	top:-2px;
+}

@@ -1,0 +1,73 @@
+*{              /*selector universal*/
+	margin:0; /*todos los elementos tienen margen 0*/
+	padding: 0;/*espacio de relleno 0*/
+	font-family: times new roman; /*tipon de fuente para todo el sitio*/
+}
+body{
+	background: #d8bfd8;/*color de fondo */
+}
+header, section, footer {
+	width: 90%; /*ancho en % para que se adapte a la pantalla*/
+	max-width: 1300px;/*para indicar que el tamaño máximo sea 1300px*/
+	margin: 1px auto; /*se aplica margen superior e inferior, separa header, section y footer*/
+} 
+/*Formato Área de navegación*/
+header nav{
+	background: #c71585; /*color para el menú*/
+	overflow: hidden;/*oculta el contenido excedente*/
+}
+header nav ul li{
+	float: left;/*crea el menú horizontal*/
+	margin: 1em; /*márgenes para los elementos de la lista*/
+	list-style-type: none;
+}
+
+header nav ul li a{
+	padding: 10px 10px;/*padding y display trabajan juntos*/
+	display: block;
+	color: #A2D9CE;/*color de la fuente*/
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none; /*elimina el subrayado del enlace*/
+
+}
+header nav ul li a:hover{
+	color: #397d54; /*al pasar el mouse sobre el enlace cambia el color de la fuente*/
+}
+/*formato para el párrafo dentro del section*/
+section p{
+	color: #124653;
+	font-size: 20px;
+}
+
+/*Fin Área de navegación*/
+.tabla_señas {/*selector de clase para la etiqueta section*/
+	width: 90%;/*ancho de la selección principal*/
+    padding: 5px;
+}
+/*formato para el título de nivel 2*/
+h2{
+	color: #8b008b;
+	font-size: 25px;
+	text-align: left;
+}
+h3{
+	color:#c71585;
+	font-size: 30px;
+	text-align: left;
+}
+/*formato para video*/
+section video{
+	position: relative;/*centra el elemento video junto con left y top*/
+	left: 30px;
+	top:-1px;
+
+}
+/*formato:para las imagenes dentro de la tabla*/
+table img{
+    position: relative; /*centrar la imagen junto con left y top*/
+	left: 100PX; 
+	top:-2px;
+	width: 400px;
+	height: 300px;
+}
